@@ -11,7 +11,18 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
-
+section {
+    display: grid;
+    margin: 0 auto;
+    width: max-content;
+    text-align: center;
+}
+#question-section {
+    display: grid;
+    justify-content: center;
+    border: 2px dotted white;
+    margin-bottom: 2em;
+}
 header {
     position: relative;
     color: white;
@@ -20,13 +31,30 @@ header {
     align-items: center;
     justify-content: center;
 }
-
-#sillyQuestions {
+div {
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#silly-questions {
     color: white;
 }
 
 main {
     padding: 20px;
+}
+
+#epic-quotes {
+    z-index: 100;
+    justify-items: center;
+    align-items: center;
+}
+
+#the-augur {
+    justify-items: center;
+    align-items: center;
 }
 
 footer {

@@ -9,7 +9,7 @@ body {
     height: 100vh;
     font-family: 'Rubik', san-serif;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 1fr 2fr 1fr;
 }
 section {
     display: grid;
@@ -46,15 +46,23 @@ main {
     padding: 20px;
 }
 
+.in-game{
+    display: grid;
+}
 #epic-quotes {
     z-index: 100;
     justify-items: center;
     align-items: center;
+    grid-row: 2;
+    grid-column: 1;
+    margin-top: 40em;
 }
 
 #the-augur {
     justify-items: center;
     align-items: center;
+    grid-row: 2;
+    grid-column: 1;
 }
 
 footer {

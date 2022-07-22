@@ -17,15 +17,26 @@
 
 <body>
     <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
+        <h1>Your perseverance will only lead to disappointment.</h1>
     </header>
-
+    
     <main>
+    
+    <section id="question-section">
+        <textarea id="silly-questions">Why can't I skip this dialogue?</textarea>
+        <button id="I-seek-the-Eye-of-Magnus">Press A</button>
+    </section>
+    <header>Still you persist? Very well.</header>
 
+    <section id="answer-section" class="hidden">
+        <p id="question-display">User's question here</p>
+        <div class="in-game">
+            <img src="/assets/augur_of_dunlain.jpg" id="the-augur">
+            <span id="epic-quotes">...</span>
+        </div>
+    </section>
     </main>
 
-    <footer>&copy;2022 Software Developer</footer>
 
     <script type="module" src="app.js"></script>
 </body>

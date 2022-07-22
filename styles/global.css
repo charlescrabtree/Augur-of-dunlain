@@ -1,35 +1,61 @@
-:root {
-    --background: rgb(224, 234, 247);
-    --header-background: white;
-    --footer-background: rgb(243, 242, 242);
-}
-
 body {
+    background-color: black;
     height: 100vh;
     font-family: 'Rubik', san-serif;
-    background: var(--background);
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 1fr 2fr 1fr;
 }
-
+section {
+    display: grid;
+    margin: 0 auto;
+    width: max-content;
+    text-align: center;
+}
+#question-section {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 2em;
+}
 header {
-    position: sticky;
+    position: relative;
+    color: white;
+    font-size: x-large;
     top: 0;
     display: flex;
     align-items: center;
-    background-color: var(--header-background);
+    justify-content: center;
+}
+div {
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#silly-questions {
+    color: black
 }
 
 main {
     padding: 20px;
 }
 
-footer {
-    position: sticky;
-    bottom: 0;
-    padding: 7px 20px;
-    font-size: .8em;
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--footer-background);
+.in-game{
+    display: grid;
+}
+
+#epic-quotes {
+    z-index: 100;
+    justify-items: center;
+    align-items: center;
+    grid-row: 2;
+    grid-column: 1;
+    margin-top: 40em;
+}
+
+#the-augur {
+    justify-items: center;
+    align-items: center;
+    grid-row: 2;
+    grid-column: 1;
 }
